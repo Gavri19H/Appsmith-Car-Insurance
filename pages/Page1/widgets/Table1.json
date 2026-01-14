@@ -66,7 +66,7 @@
     "snapshot_time",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1768415112428,
+  "columnUpdatedAt": 1768418572106,
   "columnWidthMap": {
     "adset_name": 280,
     "rt_budget": 111
@@ -253,6 +253,7 @@
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
+  "force_sync": true,
   "horizontalAlignment": "LEFT",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
@@ -1370,6 +1371,5 @@
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "idocljval4",
-  "widgetName": "Table1",
-  "force_sync": true
+  "widgetName": "Table1"
 }
