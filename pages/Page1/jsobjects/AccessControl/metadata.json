@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "69480acacbe7c368d2d81099_access_control_placeholder_id",
+  "id": "Page1_AccessControl",
+  "unpublishedCollection": {
+    "name": "AccessControl",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
