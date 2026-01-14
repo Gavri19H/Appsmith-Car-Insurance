@@ -1,0 +1,7 @@
+{
+  "adset_id": {{Table1.updatedRow.adset_id}},
+  "status": {{Table1.updatedRow.rt_status}},
+  "daily_budget": {{Table1.updatedRow.rt_budget}},
+  "bid_amount": {{Table1.updatedRow.rt_bid}},
+  "bid_strategy": {{Table1.updatedRow.rt_bid_type}}
+}
