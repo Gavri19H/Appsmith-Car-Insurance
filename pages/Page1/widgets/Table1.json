@@ -1101,7 +1101,7 @@
       "index": 18,
       "isCellEditable": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow.adset_name !== \"TOTAL\" )) :  currentRow.adset_name !== \"TOTAL\"  })()}}",
       "isCellVisible": true,
-      "isDerived": false,
+      "isDerived": true,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": true,
