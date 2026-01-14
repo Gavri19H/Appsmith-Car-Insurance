@@ -1370,5 +1370,6 @@
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "idocljval4",
-  "widgetName": "Table1"
+  "widgetName": "Table1",
+  "force_sync": true
 }
