@@ -417,7 +417,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{fetchHistory.data.records}}",
+  "tableData": "{{(() => { const data = fetchHistory.data; if (!data) return []; if (data.records) return data.records; if (Array.isArray(data) && data[0] && data[0].result && data[0].result.records) return data[0].result.records; return []; })()}}",
   "textSize": "0.875rem",
   "topRow": 8,
   "totalRecordsCount": 0,

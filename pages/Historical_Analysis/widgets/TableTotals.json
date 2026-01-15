@@ -417,7 +417,7 @@
     "responsiveBehavior": "fill",
     "rightColumn": 64,
     "searchKey": "",
-    "tableData": "{{[fetchHistory.data.totals]}}",
+    "tableData": "{{(() => { const data = fetchHistory.data; if (!data) return []; let totals = null; if (data.totals) totals = data.totals; else if (Array.isArray(data) && data[0] && data[0].result && data[0].result.totals) totals = data[0].result.totals; return totals ? [totals] : []; })()}}",
     "textSize": "0.875rem",
     "topRow": 108,
     "totalRecordsCount": 0,
