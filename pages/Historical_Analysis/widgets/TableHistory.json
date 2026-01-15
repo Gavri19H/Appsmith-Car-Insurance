@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 106,
+  "bottomRow": 152,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -32,7 +32,6 @@
     }
   },
   "columnOrder": [
-    "adset_id",
     "adset_name",
     "total_spend",
     "total_revenue",
@@ -40,9 +39,10 @@
     "roi",
     "total_results",
     "avg_cpr",
-    "avg_rpc"
+    "avg_rpc",
+    "adset_id"
   ],
-  "columnUpdatedAt": 1768505438900,
+  "columnUpdatedAt": 1768507560919,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -419,7 +419,7 @@
   "searchKey": "",
   "tableData": "{{(() => { let data = fetchHistory.data; if (!data) return []; if (typeof data === 'string') { try { data = JSON.parse(data); } catch(e) {} } if (Array.isArray(data) && data.length > 0) { if (data[0].result) data = data[0].result; else if (data[0].response && typeof data[0].response === 'string') { try { data = JSON.parse(data[0].response); } catch(e) {} } else { data = data[0]; } } if (data && data.response && typeof data.response === 'string') { try { data = JSON.parse(data.response); } catch(e) {} } return data && data.records ? data.records : []; })()}}",
   "textSize": "0.875rem",
-  "topRow": 8,
+  "topRow": 59,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
