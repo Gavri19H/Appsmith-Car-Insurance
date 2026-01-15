@@ -417,7 +417,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{(() => { const data = fetchHistory.data; if (!data) return []; if (data.records) return data.records; if (Array.isArray(data) && data[0] && data[0].result && data[0].result.records) return data[0].result.records; return []; })()}}",
+  "tableData": "{{(() => { let data = fetchHistory.data; if (!data) return []; if (typeof data === 'string') { try { data = JSON.parse(data); } catch(e) {} } if (Array.isArray(data) && data.length > 0) { if (data[0].result) data = data[0].result; else if (data[0].response && typeof data[0].response === 'string') { try { data = JSON.parse(data[0].response); } catch(e) {} } else { data = data[0]; } } if (data && data.response && typeof data.response === 'string') { try { data = JSON.parse(data.response); } catch(e) {} } return data && data.records ? data.records : []; })()}}",
   "textSize": "0.875rem",
   "topRow": 8,
   "totalRecordsCount": 0,
