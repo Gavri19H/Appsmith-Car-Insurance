@@ -1,9 +1,9 @@
 {
   "gitSyncId": "69480acacbe7c368d2d81099_70e72484-7633-45f8-911f-d81d854c8a11",
-  "id": "Page1_Actions",
+  "id": "Real-Time_Actions",
   "unpublishedCollection": {
     "name": "Actions",
-    "pageId": "Page1",
+    "pageId": "Real-Time",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "variables": []

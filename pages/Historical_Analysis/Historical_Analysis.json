@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "69480acacbe7c368d2d81099_79097e0d-47b9-4154-9258-9169aa97be85",
+  "gitSyncId": "69480acacbe7c368d2d81099_6d6f31a9-3d66-45f7-8428-50284f3a83d3",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 830,
+          "bottomRow": 1060,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 810,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 79,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Historical_Analysis",
+    "slug": "historical-analysis"
   }
 }

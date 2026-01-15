@@ -1,6 +1,6 @@
 {
   "gitSyncId": "69480acacbe7c368d2d81099_8cbeb53b-ccf5-471f-84aa-6712ce448c38",
-  "id": "Page1_getSnapshot",
+  "id": "Real-Time_getSnapshot",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -48,7 +48,7 @@
     },
     "dynamicBindingPathList": [],
     "name": "getSnapshot",
-    "pageId": "Page1",
+    "pageId": "Real-Time",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }

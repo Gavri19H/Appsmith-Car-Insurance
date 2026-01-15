@@ -1,6 +1,6 @@
 {
   "gitSyncId": "69480acacbe7c368d2d81099_ad4de8f5-89e9-4198-924e-febf4a57e7b8",
-  "id": "Page1_refreshAdsetConfig",
+  "id": "Real-Time_refreshAdsetConfig",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -54,7 +54,7 @@
       }
     ],
     "name": "refreshAdsetConfig",
-    "pageId": "Page1",
+    "pageId": "Real-Time",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

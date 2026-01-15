@@ -1,0 +1,5 @@
+{
+  "start_date": "{{DatePickerStart.formattedDate}}",
+  "end_date": "{{DatePickerEnd.formattedDate}}",
+  "user_email": "{{appsmith.user.email}}"
+}
