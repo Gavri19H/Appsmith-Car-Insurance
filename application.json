@@ -12,6 +12,10 @@
     {
       "id": "Historical_Analysis",
       "isDefault": false
+    },
+    {
+      "id": "Deep_Dive",
+      "isDefault": false
     }
   ]
 }
