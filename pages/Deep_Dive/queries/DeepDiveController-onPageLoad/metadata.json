@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "69480acacbe7c368d2d81099_8bfc155b-8535-4541-90e2-d9f9ee7a1873",
-  "id": "Deep_Dive_DeepDiveController.myFun2",
+  "gitSyncId": "69480acacbe7c368d2d81099_baa1295c-eb86-419e-8853-49a90a363416",
+  "id": "Deep_Dive_DeepDiveController.onPageLoad",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -10,7 +10,6 @@
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
-    "clientSideExecution": true,
     "collectionId": "Deep_Dive_DeepDiveController",
     "confirmBeforeExecute": false,
     "datasource": {
@@ -23,8 +22,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "DeepDiveController.myFun2",
-    "name": "myFun2",
+    "fullyQualifiedName": "DeepDiveController.onPageLoad",
+    "name": "onPageLoad",
     "pageId": "Deep_Dive",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
