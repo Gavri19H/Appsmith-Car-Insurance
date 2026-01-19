@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "Age",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -19,6 +19,7 @@
       "key": "sourceData"
     }
   ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -27,7 +28,7 @@
   "key": "knxlwvuziz",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Dimension",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 18,
@@ -49,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 32,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "[\n  { \"name\": \"State\", \"code\": \"state\" },\n  { \"name\": \"Age\", \"code\": \"age\" },\n  { \"name\": \"Provider\", \"code\": \"provider\" }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
