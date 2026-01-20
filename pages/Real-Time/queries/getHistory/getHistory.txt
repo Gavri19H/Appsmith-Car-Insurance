@@ -1,0 +1,3 @@
+{
+  "adset_id": "{{appsmith.store.selectedAdsetId}}"
+}

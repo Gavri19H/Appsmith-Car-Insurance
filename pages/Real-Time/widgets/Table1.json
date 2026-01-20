@@ -34,6 +34,7 @@
   },
   "columnOrder": [
     "adset_name",
+    "customColumn2",
     "rt_status",
     "rt_last_significant_edit",
     "business",
@@ -67,7 +68,7 @@
     "account_id",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1768930749864,
+  "columnUpdatedAt": 1768933858274,
   "columnWidthMap": {
     "adset_name": 280,
     "rt_budget": 111
@@ -233,6 +234,12 @@
     },
     {
       "key": "primaryColumns.adset_name.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn2.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn2.borderRadius"
     }
   ],
   "dynamicPropertyPathList": [
@@ -262,6 +269,9 @@
     },
     {
       "key": "primaryColumns.adset_name.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn2.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -270,6 +280,9 @@
     },
     {
       "key": "primaryColumns.adset_name.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn2.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -508,6 +521,47 @@
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn2": {
+      "alias": "Last7Days",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "#fde047",
+      "buttonLabel": "Last7Days",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "PRIMARY",
+      "cellBackground": "",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn2",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Last7Days",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{\n  storeValue('selectedAdsetId', currentRow.adset_id)\n    .then(() => getHistory.run())\n    .then(() => showModal('HistoryModal'))\n}}",
+      "originalId": "customColumn2",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
