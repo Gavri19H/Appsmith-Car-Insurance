@@ -64,9 +64,10 @@
     "today_date",
     "rt_bid_type",
     "snapshot_time",
+    "account_id",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1768418572106,
+  "columnUpdatedAt": 1768930749864,
   "columnWidthMap": {
     "adset_name": 280,
     "rt_budget": 111
@@ -217,6 +218,21 @@
     },
     {
       "key": "primaryColumns.rt_bid.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.account_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.adset_name.boxShadow"
+    },
+    {
+      "key": "primaryColumns.adset_name.borderRadius"
+    },
+    {
+      "key": "primaryColumns.adset_name.buttonColor"
+    },
+    {
+      "key": "primaryColumns.adset_name.buttonLabel"
     }
   ],
   "dynamicPropertyPathList": [
@@ -243,11 +259,17 @@
     },
     {
       "key": "primaryColumns.rt_bid.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.adset_name.onClick"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "primaryColumns.adset_name.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -318,6 +340,40 @@
       "validation": {},
       "width": 150
     },
+    "account_id": {
+      "alias": "account_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"account_id\"])) : account_id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "account_id",
+      "index": 20,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "account_id",
+      "notation": "standard",
+      "originalId": "account_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "adset_id": {
       "alias": "adset_id",
       "allowCellWrapping": false,
@@ -356,10 +412,16 @@
       "alias": "adset_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"adset_name\"])) : currentRow[\"adset_name\"] })()}}",
+      "buttonVariant": "TERTIARY",
       "cellBackground": "",
-      "columnType": "text",
+      "columnType": "button",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"adset_name\"])) : adset_name })()}}",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
@@ -376,6 +438,7 @@
       "isVisible": true,
       "label": "adset_name",
       "notation": "standard",
+      "onClick": "{{(() => { \n    const acc = currentRow.account_id; \n    const adsetId = currentRow.adset_id;\n    \n    if (!acc) { \n        showAlert('No Account ID found for this adset. Please wait for the next data sync.', 'warning'); \n        return; \n    } \n    \n    // Construct the specific filter_set required by Facebook\n    // format: CAMPAIGN_SELECTED-STRING_SET%1EIN%1E[\"<ID>\"]\n    const filterSet = 'CAMPAIGN_SELECTED-STRING_SET%1EIN%1E[%22' + adsetId + '%22]';\n    // Construct full URL with both filter_set and selected_adset_ids\n    const url = 'https://adsmanager.facebook.com/adsmanager/manage/adsets?act=' + acc + '&filter_set=' + filterSet + '&selected_adset_ids=' + adsetId;\n    \n    navigateTo(url, {}, 'NEW_WINDOW'); \n})()}}",
       "originalId": "adset_name",
       "sticky": "left",
       "textSize": "0.875rem",
