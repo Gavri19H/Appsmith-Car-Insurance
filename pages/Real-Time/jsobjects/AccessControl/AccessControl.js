@@ -6,6 +6,7 @@ export default {
 		// Specific Users
 		if (userEmail === "annamwitkop@gmail.com") return "Ana";
 		if (userEmail === "liron@media-smarter.com") return "Liron";
+		if (userEmail === "umang.g@frontstory.com") return "Liron";
 		// Default deny
 		return "NONE";
 	},
